@@ -35,3 +35,4 @@ LinkingTo: Rcpp
 Suggests: MASS, knitr, rmarkdown
 VignetteBuilder: knitr
 NeedsCompilation: yes
+Config/roxygen2/version: 8.0.0

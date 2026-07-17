@@ -193,11 +193,11 @@ nskip <- 100
 keepevery <- 1
 nn <- nobs*(ndpost*keepevery + nskip + 1)
 nc <- (ndpost*keepevery + nskip + 1)
-Gweights <- matrix(rexp(nn, rate=1), nrow=nobs, ncol=nc)
-bart_obj <- rmstbart(times=METABRIC$overall_survival_months, delta=METABRIC$overall_survival,
-                     x.train=X, Gweights=Gweights)
+#Gweights <- matrix(rexp(nn, rate=1), nrow=nobs, ncol=nc)
+#bart_obj <- rmstbart(times=METABRIC$overall_survival_months, delta=METABRIC$overall_survival,
+#                     x.train=X, Gweights=Gweights)
 
-hist(bart_obj$yhat.train.mean)
+#hist(bart_obj$yhat.train.mean)
 
 ## Next addition: put the calculation of weights using the DrawIPCW inside the rmstbart function
 ## The G matrix should be constructed something like that
